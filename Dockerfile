@@ -4,7 +4,7 @@ FROM        openjdk:11-slim-buster
 LABEL       author="Aditya Das" maintainer="me@quantumsoul.dev"
 
 RUN apt-get update -y
-RUN apt-get install -y curl ca-certificates openssl sqlite iproute2 \
+RUN apt-get install -y curl ca-certificates openssl sqlite iproute2
 RUN useradd -d /home/container -m container
  
 USER container
